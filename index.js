@@ -116,7 +116,7 @@ app.post('/criar-pagamento', async (req, res) => {
           pagamentoId: pagamentoRef.id,
         }),
 
-        notification_url: 'https://SEU-LINK-NGROK.ngrok-free.app/webhook',
+        notification_url: 'https://reino-flix-backend.onrender.com',
 
         back_urls: {
           success: 'https://google.com',
