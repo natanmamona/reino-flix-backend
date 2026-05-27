@@ -1,0 +1,4 @@
+node_modules
+.expo
+serviceAccountKey*.json
+*adminsdk*.json
