@@ -114,7 +114,7 @@ app.post('/criar-pagamento', async (req, res) => {
           pagamentoId: pagamentoRef.id,
         }),
 
-        notification_url: 'https://reino-flix-backend.onrender.com',
+        notification_url: 'https://reino-flix-backend.onrender.com/webhook',
 
         back_urls: {
           success: 'https://google.com',
@@ -281,6 +281,8 @@ app.post('/webhook', async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log('SERVIDOR ONLINE');
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log('SERVIDOR ONLINE NA PORTA', PORT);
 });
